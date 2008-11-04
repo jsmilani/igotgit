@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DA7E4910ACC9AEB00B17D13 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		4DA7E4920ACC9AEB00B17D13 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		4DA7E4930ACC9AEB00B17D13 /* GitDoc.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* GitDoc.nib */; };
+		4DA7E4940ACC9AEB00B17D13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		4DA7E4950ACC9AEB00B17D13 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E8F5E29F03AEDEA503A81C6F /* rb_main.rb */; };
+		4DA7E4960ACC9AEB00B17D13 /* GitDoc.rb in Resources */ = {isa = PBXBuildFile; fileRef = E8F5E2A103AEDEBE03A81C6F /* GitDoc.rb */; };
+		4DA7E4980ACC9AEB00B17D13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		4DA7E49A0ACC9AEB00B17D13 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		4DA7E49B0ACC9AEB00B17D13 /* RubyCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5E29503AEDE5A03A81C6F /* RubyCocoa.framework */; };
+		CC84C3D00EBD3B18008B6139 /* GitController.rb in Resources */ = {isa = PBXBuildFile; fileRef = CC84C3CF0EBD3B18008B6139 /* GitController.rb */; };
+		CC84C3E70EBD646C008B6139 /* git in Resources */ = {isa = PBXBuildFile; fileRef = CC84C3D40EBD646C008B6139 /* git */; };
+		CC84C3E80EBD646C008B6139 /* git.rb in Resources */ = {isa = PBXBuildFile; fileRef = CC84C3E60EBD646C008B6139 /* git.rb */; };
+		CC84C6C90EBD6B9A008B6139 /* Git.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC84C6C80EBD6B9A008B6139 /* Git.xib */; };
+		CC84C8080EBE782F008B6139 /* GitDocumentController.h in Headers */ = {isa = PBXBuildFile; fileRef = CC84C8060EBE782F008B6139 /* GitDocumentController.h */; };
+		CC84C8090EBE782F008B6139 /* GitDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC84C8070EBE782F008B6139 /* GitDocumentController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/GitDoc.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4DA7E49F0ACC9AEB00B17D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA7E4A00ACC9AEB00B17D13 /* iGotGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGotGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC84C3CF0EBD3B18008B6139 /* GitController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = GitController.rb; sourceTree = "<group>"; };
+		CC84C3D40EBD646C008B6139 /* git */ = {isa = PBXFileReference; lastKnownFileType = folder; path = git; sourceTree = "<group>"; };
+		CC84C3E60EBD646C008B6139 /* git.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = git.rb; sourceTree = "<group>"; };
+		CC84C6C80EBD6B9A008B6139 /* Git.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Git.xib; sourceTree = "<group>"; };
+		CC84C8060EBE782F008B6139 /* GitDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitDocumentController.h; sourceTree = "<group>"; };
+		CC84C8070EBE782F008B6139 /* GitDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitDocumentController.m; sourceTree = "<group>"; };
+		E8F5E29503AEDE5A03A81C6F /* RubyCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RubyCocoa.framework; path = /System/Library/Frameworks/RubyCocoa.framework; sourceTree = "<absolute>"; };
+		E8F5E29F03AEDEA503A81C6F /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		E8F5E2A103AEDEBE03A81C6F /* GitDoc.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = GitDoc.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DA7E4990ACC9AEB00B17D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA7E49A0ACC9AEB00B17D13 /* Cocoa.framework in Frameworks */,
+				4DA7E49B0ACC9AEB00B17D13 /* RubyCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				E8F5E29503AEDE5A03A81C6F /* RubyCocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DA7E4A00ACC9AEB00B17D13 /* iGotGit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* iGotGit */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				4DA7E49F0ACC9AEB00B17D13 /* Info.plist */,
+			);
+			name = iGotGit;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5E2A103AEDEBE03A81C6F /* GitDoc.rb */,
+				CC84C3CF0EBD3B18008B6139 /* GitController.rb */,
+				CC84C8060EBE782F008B6139 /* GitDocumentController.h */,
+				CC84C8070EBE782F008B6139 /* GitDocumentController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CC84C3D40EBD646C008B6139 /* git */,
+				CC84C3E60EBD646C008B6139 /* git.rb */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				E8F5E29F03AEDEA503A81C6F /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* GitDoc.nib */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				CC84C6C80EBD6B9A008B6139 /* Git.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DA7E48F0ACC9AEB00B17D13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC84C8080EBE782F008B6139 /* GitDocumentController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4DA7E48E0ACC9AEB00B17D13 /* iGotGit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA7E49C0ACC9AEB00B17D13 /* Build configuration list for PBXNativeTarget "iGotGit" */;
+			buildPhases = (
+				4DA7E48F0ACC9AEB00B17D13 /* Headers */,
+				4DA7E4900ACC9AEB00B17D13 /* Resources */,
+				4DA7E4970ACC9AEB00B17D13 /* Sources */,
+				4DA7E4990ACC9AEB00B17D13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iGotGit;
+			productInstallPath = "$(HOME)/Applications";
+			productName = iGotGit;
+			productReference = 4DA7E4A00ACC9AEB00B17D13 /* iGotGit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4DDA93C30ABF754D00FBC9C8 /* Build configuration list for PBXProject "iGotGit" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 0;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* iGotGit */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DA7E48E0ACC9AEB00B17D13 /* iGotGit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DA7E4900ACC9AEB00B17D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA7E4910ACC9AEB00B17D13 /* Credits.rtf in Resources */,
+				4DA7E4920ACC9AEB00B17D13 /* MainMenu.nib in Resources */,
+				4DA7E4930ACC9AEB00B17D13 /* GitDoc.nib in Resources */,
+				4DA7E4940ACC9AEB00B17D13 /* InfoPlist.strings in Resources */,
+				4DA7E4950ACC9AEB00B17D13 /* rb_main.rb in Resources */,
+				4DA7E4960ACC9AEB00B17D13 /* GitDoc.rb in Resources */,
+				CC84C3D00EBD3B18008B6139 /* GitController.rb in Resources */,
+				CC84C3E70EBD646C008B6139 /* git in Resources */,
+				CC84C3E80EBD646C008B6139 /* git.rb in Resources */,
+				CC84C6C90EBD6B9A008B6139 /* Git.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DA7E4970ACC9AEB00B17D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA7E4980ACC9AEB00B17D13 /* main.m in Sources */,
+				CC84C8090EBE782F008B6139 /* GitDocumentController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* GitDoc.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = GitDoc.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DA7E49D0ACC9AEB00B17D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = iGotGit;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4DA7E49E0ACC9AEB00B17D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = iGotGit;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4DDA93C40ABF754D00FBC9C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		4DDA93C50ABF754D00FBC9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DA7E49C0ACC9AEB00B17D13 /* Build configuration list for PBXNativeTarget "iGotGit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA7E49D0ACC9AEB00B17D13 /* Debug */,
+				4DA7E49E0ACC9AEB00B17D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDA93C30ABF754D00FBC9C8 /* Build configuration list for PBXProject "iGotGit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDA93C40ABF754D00FBC9C8 /* Debug */,
+				4DDA93C50ABF754D00FBC9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
