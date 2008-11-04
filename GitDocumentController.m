@@ -35,8 +35,8 @@
   }
 }
 
-#- (IBAction)newDocument:(id)sender {
+/*- (IBAction)newDocument:(id)sender {
 #  NSSavePanel *save_panel = [NSSavePanel savePanel];
 #  [save_panel runModal];
-#}
+#}*/
 @end

@@ -19,6 +19,10 @@ class GitDoc < OSX::NSDocument
     return "GitDoc"
   end
   
+  def saveDocumentAs(sender)
+    log('savedoc')
+  end
+  
   def hasUnautosavedChanges
     false
   end

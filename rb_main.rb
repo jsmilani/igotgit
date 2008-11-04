@@ -10,12 +10,6 @@ require 'osx/cocoa'
 include OSX
 ENV['PATH'] += ':/usr/local/git/bin'
 
-if ENV['DEBUG']
-  print 'debug'
-  require 'rubygems'
-  gem 'ruby-debug'
-end
-
 # Add our lib directory to ruby search path
 
 def rb_main_init
