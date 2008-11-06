@@ -22,6 +22,7 @@
 		CC84C6C90EBD6B9A008B6139 /* Git.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC84C6C80EBD6B9A008B6139 /* Git.xib */; };
 		CC84C8080EBE782F008B6139 /* GitDocumentController.h in Headers */ = {isa = PBXBuildFile; fileRef = CC84C8060EBE782F008B6139 /* GitDocumentController.h */; };
 		CC84C8090EBE782F008B6139 /* GitDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC84C8070EBE782F008B6139 /* GitDocumentController.m */; };
+		CCF95B040EC045AA009C70DB /* BranchProxy.rb in Resources */ = {isa = PBXBuildFile; fileRef = CCF95B030EC045AA009C70DB /* BranchProxy.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		CC84C6C80EBD6B9A008B6139 /* Git.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Git.xib; sourceTree = "<group>"; };
 		CC84C8060EBE782F008B6139 /* GitDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitDocumentController.h; sourceTree = "<group>"; };
 		CC84C8070EBE782F008B6139 /* GitDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitDocumentController.m; sourceTree = "<group>"; };
+		CCF95B030EC045AA009C70DB /* BranchProxy.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = BranchProxy.rb; sourceTree = "<group>"; };
 		E8F5E29503AEDE5A03A81C6F /* RubyCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RubyCocoa.framework; path = /System/Library/Frameworks/RubyCocoa.framework; sourceTree = "<absolute>"; };
 		E8F5E29F03AEDEA503A81C6F /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		E8F5E2A103AEDEBE03A81C6F /* GitDoc.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = GitDoc.rb; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				CC84C3CF0EBD3B18008B6139 /* GitController.rb */,
 				CC84C8060EBE782F008B6139 /* GitDocumentController.h */,
 				CC84C8070EBE782F008B6139 /* GitDocumentController.m */,
+				CCF95B030EC045AA009C70DB /* BranchProxy.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				CC84C3E70EBD646C008B6139 /* git in Resources */,
 				CC84C3E80EBD646C008B6139 /* git.rb in Resources */,
 				CC84C6C90EBD6B9A008B6139 /* Git.xib in Resources */,
+				CCF95B040EC045AA009C70DB /* BranchProxy.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

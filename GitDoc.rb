@@ -10,35 +10,36 @@
 require 'osx/cocoa'
 
 class GitDoc < OSX::NSDocument
-  ib_outlet :branch_list
+  ib_outlet :git_window, :branch_list
   ib_outlet :log
   
-  ib_outlet :modal_window
+  attr_reader :modal_window
 
   def windowNibName
     return "GitDoc"
   end
   
-  def saveDocumentAs(sender)
-    log('savedoc')
-  end
+  #def saveDocumentAs(sender)
+  #  NSLog('savedoc')
+  #end
   
-  def hasUnautosavedChanges
-    false
-  end
+  #def hasUnautosavedChanges
+  #  false
+  #end
 
   def windowControllerDidLoadNib(aController)
-    super_windowControllerDidLoadNib(aController)
-	  @window.setTitle(@git.dir.path)
+    log("Opened: #{@git.dir.path}")
+	  @git_window.setTitle(@git.dir.path)
   end
   
-  def fileWrapperRepresentationOfType(aType)
-    return nil
+  def writeToURL_ofType_error(absoluteURL, typeName, outError)
+    return true
   end
   
   
   def readFromURL_ofType_error(absoluteURL, typeName, outError)
-    @git = Git::Base.new(absoluteURL.path.to_s)
+    p 'readFromURL_ofType_error'
+    @git = Git::Base.new(:working_directory => absoluteURL.path.to_s)
     return true
   end
   
@@ -80,6 +81,16 @@ class GitDoc < OSX::NSDocument
   
   def git
     @git
+  end
+  
+  kvc_reader :local_branches
+  def local_branches
+    BranchProxy.from_array(@git.branches.local)
+  end
+  
+  kvc_reader :remote_branches
+  def remote_branches
+    BranchProxy.from_array(@git.branches.remote)
   end
   
   def log(message)
